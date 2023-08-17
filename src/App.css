@@ -13,5 +13,21 @@
   height: 100vh;
   padding: 0px;
   margin: 0px;
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
+}
+/* App.css */
+.parallax {
+  transition: transform 0.2s ease-out; /* Apply a smooth transition */
+}
+
+#p1 {
+  transform: translateY(var(--fact1, 0px));
+}
+
+#p2 {
+  transform: translateY(var(--fact2, 0px));
+}
+
+#p3 {
+  transform: translateY(var(--fact3, 0px));
 }

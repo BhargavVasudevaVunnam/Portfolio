@@ -1,8 +1,8 @@
+import React, { useEffect, useRef } from 'react';
 import './App.css';
 import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
-import React, { useEffect, useRef, useState } from 'react';
 
 function App() {
   const ht = window.innerHeight;
@@ -11,23 +11,25 @@ function App() {
   const fact2Ref = useRef(0);
   const fact3Ref = useRef(0);
 
-  const [fact1Style, setFact1Style] = useState({ transform: `translateY(${fact1Ref.current}px)` });
-  const [fact2Style, setFact2Style] = useState({ transform: `translateY(${fact2Ref.current}px)` });
-  const [fact3Style, setFact3Style] = useState({ transform: `translateY(${fact3Ref.current}px)` });
-
-  function handleScroll() {
-    var sl = window.scrollY;
+  function animateit() {
+    const sl = window.scrollY;
 
     if (sl >= 0 && sl < ht) {
-      fact1Ref.current = (sl-0) * 0.6;
-      setFact1Style({ transform: `translateY(${fact1Ref.current}px)` });
+      fact1Ref.current = (sl - 0) * 0.5;
     } else if (sl >= ht && sl < ht * 2) {
-      fact2Ref.current = (sl-(ht * 1) ) * 0.6;
-      setFact2Style({ transform: `translateY(${fact2Ref.current}px)` });
+      fact2Ref.current = (sl - ht) * 0.5;
     } else if (sl >= ht * 2 && sl < ht * 3) {
-      fact3Ref.current = (sl-(ht * 2)) * 0.6;
-      setFact3Style({ transform: `translateY(${fact3Ref.current}px)` });
+      fact3Ref.current = (sl - ht * 2) * 0.5;
     }
+
+    // Update CSS variables for smooth transitions
+    document.documentElement.style.setProperty('--fact1', `${fact1Ref.current}px`);
+    document.documentElement.style.setProperty('--fact2', `${fact2Ref.current}px`);
+    document.documentElement.style.setProperty('--fact3', `${fact3Ref.current}px`);
+  }
+
+  function handleScroll() {
+    requestAnimationFrame(animateit);
   }
 
   useEffect(() => {
@@ -40,13 +42,13 @@ function App() {
 
   return (
     <div id="PageContainer">
-      <div id="p1" style={fact1Style}>
+      <div id="p1" className="parallax">
         <Page1 />
       </div>
-      <div id="p2" style={fact2Style}>
+      <div id="p2" className="parallax">
         <Page2 />
       </div>
-      <div id="p3" style={fact3Style}>
+      <div id="p3" className="parallax">
         <Page3 />
       </div>
     </div>
