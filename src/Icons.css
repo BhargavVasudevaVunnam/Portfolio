@@ -1,0 +1,12 @@
+.icons{
+gap: 7px;
+display: flex;
+}
+.icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+.icon{
+    display: block;
+height: 30px;
+}
