@@ -5,7 +5,6 @@
   padding: 0px;
   transform-style: preserve-3d;
   perspective: 2px;
-  overflow-x: hidden;
 }
 
 #PageContainer>div

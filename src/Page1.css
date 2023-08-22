@@ -7,7 +7,12 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 
+}
+#p1{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 /*Page Layout*/
 #header{
@@ -41,7 +46,8 @@ flex: 3;
 #iconsContainer{
     flex:1;
     display: flex;
-    justify-content:center;
+    justify-content: center;
+   
 }
 
 /*Functional Animations*/

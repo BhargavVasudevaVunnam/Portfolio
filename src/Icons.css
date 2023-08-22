@@ -1,6 +1,8 @@
 .icons{
-gap: 7px;
+gap: 15px;
 display: flex;
+position: absolute;
+right: 20px;
 }
 .icon:hover{
     transform: scale(1.2);
@@ -8,5 +10,5 @@ display: flex;
 }
 .icon{
     display: block;
-height: 30px;
+    height: 30px;
 }
