@@ -3,7 +3,7 @@ import image from './assets/rot.JPG'
 import Icons from './Icons';
 function Page1(){
     return <div id="Introduction">
-                <div id="header">
+                <div id="header1">
                   <p id="Title">Bhargav Vasudeva Vunnam<br/><span id="subheading">Full Stack Developer</span></p>
                   <div id="imagecontainer">
                   <img id="cover" src={image} alt="OOPS check internet"></img>

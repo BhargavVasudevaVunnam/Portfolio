@@ -4,8 +4,8 @@
     gap: 20px;
     padding: 30px;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -15,7 +15,7 @@
     overflow-x: hidden;
 }
 /*Page Layout*/
-#header{
+#header1{
 flex: 1;
 display: flex;
 flex-direction: row;
@@ -77,8 +77,8 @@ flex: 3;
     padding: 20px;
     display: flex;
     overflow-y: scroll;
-    
-  
+    box-shadow: 20px 20px 5px grey;
+
 }
 #CrossBlackBoard::-webkit-scrollbar{
     display: none;

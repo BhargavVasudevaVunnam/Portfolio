@@ -1,0 +1,36 @@
+.projectcards{
+flex:  1;
+background-color: red;
+width: 250px;
+height: 300px;
+margin: 20px;
+border-radius: 10%;
+box-shadow: 0px 0px 10px 10px white;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 15px;
+}
+.projectcards:hover{
+    box-shadow:  0px 0px 10px 10px skyblue;
+}
+#title{
+    flex: 1;
+text-align: center;
+}
+#description{
+    flex:3;
+text-align: justify;
+}
+
+#gitcontain{
+    flex: 1;
+   display: flex;
+   justify-content: center;
+
+}
+#gitlink{
+    display: block;
+}
