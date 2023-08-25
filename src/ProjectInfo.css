@@ -14,22 +14,49 @@ flex-wrap: wrap;
 padding: 15px;
 }
 .projectcards:hover{
-    box-shadow:  0px 0px 10px 10px skyblue;
+    box-shadow:  0px 0px 10px 10px yellow;
 }
 #title{
-    flex: 1;
+
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#description{
+ 
+    font-family:'Courier New', Courier, monospace;
 text-align: center;
 }
-#description{
+#descriptioncontainer{
     flex:3;
-text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow-x: auto;
+    overflow-y: auto;
 }
-
+#descriptioncontainer::-webkit-scrollbar{
+    display: none;
+}
+#titlecontainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+#titlecontainer::-webkit-scrollbar {
+display: none;
+}
 #gitcontain{
     flex: 1;
-   display: flex;
-   justify-content: center;
-
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 #gitlink{
     display: block;

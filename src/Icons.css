@@ -11,4 +11,8 @@ right: 20px;
 .icon{
     display: block;
     height: 30px;
+    color: black;
+}
+.icon:active{
+    color: lightcoral
 }

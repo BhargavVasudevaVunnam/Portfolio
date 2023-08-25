@@ -1,5 +1,5 @@
 #SkillsBrag{
-    background-color: blueviolet;
+    background-color: white;
     width: 100%;
     height: 100%;
     display: flex;
@@ -8,7 +8,8 @@
     align-items: center;
 }
 #skills{
-    background-color: antiquewhite;
+    background-color: #eafff4;
+    opacity: 0.8;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -16,6 +17,7 @@
     width: 100%;
     height: 100%;
 }
+
 h1{
     font-family:'Courier New', Courier, monospace;
     flex: 1;
@@ -34,6 +36,7 @@ h1{
     flex-wrap: wrap;
     text-align: center;
     font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
     
 }
 #coreinterestsp{
@@ -44,6 +47,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
 }
 #certis{
     flex: 5;
@@ -75,7 +79,8 @@ h1{
     border-color: #f00;
 }
 #coreinterests{
-    background-color: aquamarine;
+    background-color: 	#ede5ff;
+    opacity: 0.8;
     display: flex;
     flex-direction: column;
     align-items: center;

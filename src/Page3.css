@@ -1,5 +1,5 @@
 #ProfessionalExperience{
-    background-color: bisque;
+    background-color: lightblue;
     width: 100%;
     height: 100%;
     display: flex;
@@ -12,14 +12,14 @@ display: flex;
 flex: 2 1;
 width: 100%;
 height: 100%;
-background-color: aqua;
+background-color: lightblue;
 }
 #projectscontainer{
 display:flex;
 flex:10 1;
 width: 100%;
 height: 100%;
-background-color: pink;
+background-color: lightblue;
 overflow-y: auto;
 overflow-x: auto;
 }
@@ -31,10 +31,9 @@ flex-wrap: wrap;
 flex: 1 1;
 width: 100%;
 height: 100%;
-background-color:brown;
 }
 #footertext{
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     color: black;
 }

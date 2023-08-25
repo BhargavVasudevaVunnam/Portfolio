@@ -14,7 +14,7 @@ return <div className="icons">
     <a className="icon" download="Bhargav_Vunnam_Resume.pdf"  href={resume}>
        <FaFileDownload className="icon" size={19}/>
     </a>
-    <a href="tel:1234567890">
+    <a href="https://www.google.com/search?q=3167689268" target='_blank' >
         <FaPhone className="icon" size={19} /> {/* Adjust the size as needed */}
     </a>
 </div>
